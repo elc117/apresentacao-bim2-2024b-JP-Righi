@@ -71,6 +71,44 @@ Estrutura básica do projeto:
 
 ---
 
+## 🚀 Testando o Código
+
+Para testar o código da solução, utilizei o Visual Studio Code, que já estava instalado no meu ambiente. Criei dois arquivos Java no mesmo diretório: `SharedObjectExample.java` e `Main.java`. 
+
+No arquivo `Main.java`, implementei o seguinte código para demonstrar o uso da classe `SharedObjectExample`:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        SharedObjectExample sharedObject = new SharedObjectExample(10);
+
+        System.out.println("Valor inicial: " + sharedObject.getValue());
+
+        sharedObject.updateValue(20);
+        System.out.println("Valor atualizado: " + sharedObject.getValue());
+    }
+}
+```
+
+
+### 🔧 Passos Executados
+
+1. Criei os arquivos `SharedObjectExample.java` e `Main.java` no mesmo diretório.
+2. Compilei os arquivos utilizando o seguinte comando no terminal: `javac SharedObjectExample.java Main.java`.
+3. Executei o programa com o comando: `java Main`.
+4. A saída foi exibida no terminal, conforme esperado:
+   - Valor inicial: 10
+   - Valor atualizado: 20
+
+### 📷 Demonstração de Execução
+
+Abaixo está uma imagem demonstrando a saída do programa após a execução:
+
+![Demonstração de Execução](execution_demo.png)
+
+
+---
+
 ## 📝 Conclusões
 Este projeto demonstra a importância de compreender como objetos são compartilhados entre threads e como usar mecanismos de sincronização para evitar problemas de concorrência. A ausência de controle pode levar a inconsistências, enquanto o uso de práticas adequadas, como métodos sincronizados, promove a segurança e previsibilidade.
 
